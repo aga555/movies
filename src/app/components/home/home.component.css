@@ -1,0 +1,6 @@
+.home-image{
+  width: 400px;
+  margin: auto;
+  display: flex;
+  max-width: 100%;
+}
