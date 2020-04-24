@@ -1,4 +1,5 @@
-<p> title :{{movies[0].title}}
- year: {{movies[0].year}}
-<img [src]="movies[0].poster" class=""> </p>
-<ul></ul>
+<div *ngFor=" let movie of movies">
+  <h3> {{movie.title}}  {{movie.year}}</h3>
+  <img [src]="movie.poster" class="">
+</div>
+
