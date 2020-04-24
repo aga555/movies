@@ -1,5 +1,13 @@
-<div *ngFor=" let movie of movies">
-  <h3> {{movie.title}}  {{movie.year}}</h3>
-  <img [src]="movie.poster" class="">
+<div class="row">
+
+    <div class="card col-md-4 col-sm6 col-xs-12" *ngFor=" let movie of movies">
+      <div class="alert alert-warning">
+      <div class="card-body">
+        <h3 class="card-title"> {{movie.title}}</h3>
+        <p>{{movie.year}}</p>
+        <img [src]="movie.poster" class="card-img-top">
+      </div>
+    </div>
+</div>
 </div>
 

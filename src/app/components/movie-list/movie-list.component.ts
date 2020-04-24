@@ -19,9 +19,13 @@ export class MovieListComponent implements OnInit {
         poster: 'https://ssl-gfx.filmweb.pl/ph/08/62/862/182042.3.jpg'
       },
       {
-        title: 'Forest Fump',
+        title: 'Forest Gump',
         year: '1994',
         poster: 'https://ssl-gfx.filmweb.pl/ph/09/98/998/182082_1.3.jpg'
+      }, {
+        title: 'Nietykalni',
+        year: '2011',
+        poster: 'https://ssl-gfx.filmweb.pl/ph/33/90/583390/300448_1.2.jpg'
       }
     ];
   }
