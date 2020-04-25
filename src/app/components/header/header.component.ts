@@ -16,6 +16,6 @@ export class HeaderComponent implements OnInit {
 
   submitHandler(event) {
     event.preventDefault();
-    this.router.navigate(['/movies']);
+    this.router.navigate(['/movies'], {queryParams: {m: 'iron'}});
   }
 }
