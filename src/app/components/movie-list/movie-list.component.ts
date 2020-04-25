@@ -9,11 +9,12 @@ import {MoviesService} from '../../services/movies.service';
 export class MovieListComponent implements OnInit {
   movies: any[];
 
-  constructor( private service: MoviesService) {
+  constructor(private service: MoviesService) {
   }
 
   ngOnInit() {
-    this.service.searchMovies('spider').subscribe();
+    this.service.searchMovies('spider').subscribe(
+      resp => this.movies = resp.Search);
   }
 
 }
