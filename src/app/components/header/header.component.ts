@@ -7,6 +7,7 @@ import {Router} from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  queryTerm: string;
 
   constructor(private router: Router) {
   }
@@ -16,6 +17,6 @@ export class HeaderComponent implements OnInit {
 
   submitHandler(event) {
     event.preventDefault();
-    this.router.navigate(['/movies'], {queryParams: {m: 'iron'}});
+    this.router.navigate(['/movies'], {queryParams: {m: this.queryTerm}});
   }
 }
