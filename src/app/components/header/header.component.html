@@ -6,7 +6,7 @@
   <h3  class="app-clickable" [routerLink]="['/home']" > Movie Browser</h3>
   </div>
   <div class="col-md-8">
-  <form>
+  <form (submit)="submitHandler($event)" >
     <label style="width: 100%">
     <input type="text" name="queryTerm" class="form-control"autofocus placeholder="search movies">
   </label></form>
