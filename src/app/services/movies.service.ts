@@ -16,6 +16,9 @@ export class MoviesService {
 
   searchMovies(searchTerm: string): Observable<any> {
     return this.http.get(baseUrl, {params: {s: searchTerm}});
+  }
 
+  getMoviesDetails(imdbID: string): Observable<any> {
+    return this.http.get(baseUrl, {params :{i: imdbID}});
   }
 }
