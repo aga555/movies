@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1587841596077,
+  "timestamp": 1587842477927,
   "index": "/movies/index.html",
   "assetGroups": [
     {
@@ -43,7 +43,7 @@
     "/movies/assets/icons/apple-touch-icon.png": "52843981d1a3f79e299a017c096abbd27ac9e3ee",
     "/movies/assets/img/aga.jpg": "c7c8c2e68b7f268b49fa5d2abb37e8de50925c7e",
     "/movies/favicon.ico": "d64302ec810d093077e478edd6a1d606fbdbb5a3",
-    "/movies/index.html": "c82517c5845fb0c457a7a14c2036102872cf83b6",
+    "/movies/index.html": "4fc91245ad4192b94c23065d30f6255fa61d1884",
     "/movies/main-es2015.1a0ae3b383bb5c3a926b.js": "eccf734fee532020fcc9c4965fb966a12d59ac70",
     "/movies/main-es5.1a0ae3b383bb5c3a926b.js": "dd109a08139b0166b41a29a0e0e5f86fd5e62fde",
     "/movies/manifest.webmanifest": "6eee73ff59622bbde9381ad80f2e919a09167823",
