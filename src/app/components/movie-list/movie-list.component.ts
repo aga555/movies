@@ -13,7 +13,7 @@ export class MovieListComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.service.searchMovies('spider').subscribe(
+    this.service.searchMovies('iron').subscribe(
       resp => this.movies = resp.Search);
   }
 
