@@ -9,7 +9,9 @@ import {MovieListComponent} from './components/movie-list/movie-list.component';
 import {RouterModule} from '@angular/router';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
+import {MovieDetailsComponent} from './components/movie-details/movie-details.component';
+import {ServiceWorkerModule} from '@angular/service-worker';
+import {environment} from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { MovieDetailsComponent } from './components/movie-details/movie-details.
     AppRoutingModule,
     RouterModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
