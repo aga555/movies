@@ -1,20 +1,25 @@
-
 <div class="alert alert-primary">
-  <div  class="container">
-<div class="row">
-  <div class="col-md-4">
-  <h3  class="app-clickable" [routerLink]="['/home']" > Movie Browser</h3>
-  </div>
-  <div class="col-md-8">
-  <form (submit)="submitHandler($event)" >
-    <label style="width: 100%">
-    <input type="text" name="queryTerm"
-           class="form-control"
-           [(ngModel)]="queryTerm"
-           autofocus placeholder="search movies">
-  </label></form>
-  </div>
-</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3 class="app-clickable" [routerLink]="['/home']"> Movie Browser</h3>
+      </div>
+      <div class="col-md-8">
+        <form (submit)="submitHandler($event)">
+          <label style="width: 100%">
+            <input type="text" name="queryTerm"
+                   class="form-control"
+                   [(ngModel)]="queryTerm"
+                   minlength="3"
+                   autofocus placeholder="search movies">
+          </label>
+        </form>
+        <div *ngIf="queryTerm.length<3">
+
+          <h4> The title should be longer than 3 letters</h4>
+        </div>
+      </div>
+    </div>
 
   </div>
 </div>
